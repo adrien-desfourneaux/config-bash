@@ -105,5 +105,5 @@ On_IWhite='\[\e[0;107m\]'   # White
 #             to embed a terminal control sequence into the prompt
 #  \]         end a sequence of non-printing characters
 
-export PS1="${Red}(\!) ${Green}\u${White}@${Blue}\h${Color_Off}: ${Cyan}\w ${Red}\\$ ${Color_Off}"
+export PS1="\n\n${Red}(\!) ${Green}\u${White}@${Blue}\h${Color_Off}: ${Cyan}\w ${Red}\\$ ${Color_Off}"
 
