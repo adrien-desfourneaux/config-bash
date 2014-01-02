@@ -1,3 +1,3 @@
-source ".bash/alias.bash"
-source ".bash/path.bash"
-source ".bash/prompt.bash"
+source "$HOME/.bash/alias.bash"
+source "$HOME/.bash/path.bash"
+source "$HOME/.bash/prompt.bash"
