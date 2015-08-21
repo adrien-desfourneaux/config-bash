@@ -1,26 +1,27 @@
-Configuration de bash
+My bash configuration
 ======================
 
-Mes fichiers de configuration de bash
+Those are my bash configuration files
 
 Structure
 ---------
 
-  * .bash_profile : Fichier de configuration de bash
-  * alias.bash : les alias de commandes
-  * path.bash : les ajouts dans le $PATH
-  * prompt.bash : les modifications du prompt
+  * .bash_profile : bash config file with imports
+  * alias.bash : command aliases
+  * path.bash : configuration of $PATH
+  * prompt.bash : configuration of bash prompt
 
 Installation
 ------------
 
-Backups éventuels
+Eventual backups
 
-	cd;
-	cp -r .bash .bash.bak
+	cp -r ~/.bash ~/.bash.bak
+	cp ~/.bash_profile ~/.bash_profile.bak
 
 Installation
 
-	cd;
-	git clone https://github.com/dieze/config-bash.git .bash
-	ln -s .bash/.bash_profile .bash_profile
+	git clone https://github.com/dieze/config-bash.git ~/.bash
+	ln -s ~/.bash/.bash_profile ~/.bash_profile
+
+You may need to move your old ~/.bash_profile configurations (now in ~/.bash_profile.bak) to the new structure.
