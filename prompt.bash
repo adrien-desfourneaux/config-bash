@@ -18,11 +18,11 @@ __has_parent_dir () {
 
 __vcs_name() {
   if [ -d .svn ]; then
-    echo "-[svn]";
+    echo "[svn]";
   elif __has_parent_dir ".git"; then
-    echo "-[$(__git_ps1 'git %s')]";
+    echo "[$(__git_ps1 'git %s')]";
   elif __has_parent_dir ".hg"; then
-    echo "-[hg $(hg branch)]"
+    echo "[hg $(hg branch)]"
   fi
 }
 
@@ -47,4 +47,4 @@ lt_blue=$(tput -Txterm setaf 6)
 bold=$(tput -Txterm bold)
 reset=$(tput -Txterm sgr0)
 
-export PS1='\n\[$bold\]\[$black\][\[$dk_blue\]\@\[$black\]]-[\[$green\]\u\[$yellow\]@\[$green\]\h\[$black\]]-[\[$pink\]\w\[$black\]]\[\033[0;33m\]$(__vcs_name)\[\033[00m\]\[$lt_blue\]$(vagrant_status)\[\033[0;33m\][$ForceCLIUsername]\[$reset\]\n\[$reset\]\$ '
+export PS1='\n\[$bold\]\[$dk_blue\]\@\[$green\]\u\[$yellow\]@\[$green\]\h\[$black\] \[$pink\]\w\[$black\] \[$reset\]\[$yellow\]$(__vcs_name)\[$lt_blue\]$(vagrant_status)\[\033[0;33m\][$ForceCLIUsername]\[$reset\]\n\[$reset\]\$ '
