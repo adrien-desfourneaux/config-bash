@@ -12,6 +12,7 @@ source "$HOME/.bash/apps/hub.sh"
 source "$HOME/.bash/apps/jenv.sh"
 source "$HOME/.bash/apps/mysql.sh"
 source "$HOME/.bash/apps/nvm.sh"
+source "$HOME/.bash/apps/rvm.sh"
 source "$HOME/.bash/apps/vagrant.sh"
 
 source "$HOME/.bash/aliases.sh"
